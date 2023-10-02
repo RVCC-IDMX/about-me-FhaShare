@@ -1,5 +1,38 @@
 body {
-    font-family: Gochi+Hand;
+    font-family: "Gochi Hand";
     background-color:#FFD8E6;
     color: #460199;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Kaushan Script";
+    font-size: 40pt;
+    color: #CC566E;
+}
+
+header {
+    text-align: center;
+}
+
+#hero, footer {
+    background-color:#D2C9FF;
+    border: 4px solid #7A53FA;
+    text-align: center;
+    font-size: 20pt;
+    padding: 10px;
+}
+
+#hero img {
+    width: 300px;
+}
+
+#bio {
+    text-align: center;
+    font-size: 15pt;
+}
+
+footer {
+    font-family: serif;
+    font-size: 10pt;
+    color: #000000;
 }
