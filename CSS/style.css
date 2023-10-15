@@ -103,7 +103,7 @@ section#hobbies {
 
 /* Dropcaps */
 
-#lit div p:nth-child(3n+1):first-letter {
+#lit div p:first-child:first-letter {
     color: #ffffff;
     background-image: radial-gradient(#472557, #6647d4);
     float: left;
@@ -145,6 +145,8 @@ footer {
     #lit div {
         max-width: 100%;
         columns: 20rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
 }
@@ -161,7 +163,7 @@ footer {
         display: none;
     }
 
-    #gallery h2 {
+    h2 {
         grid-column: 1/-1;
     }
 
