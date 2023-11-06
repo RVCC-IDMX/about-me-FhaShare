@@ -121,6 +121,73 @@
             This is my new study station.
         </div>
     </section>
+
+    <section id="contact">
+
+        <h2>Contact Us</h2>
+
+        <form id="contactFrom" name="contactFrom" method="post" data-netlify="true">
+
+            <fieldset>
+                <legend>Contact Form</legend>
+                
+                <div id="formElements">
+
+                    <!-- Name -->
+                    <lable for="name">Name (required)</lable>
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                    
+                    <!-- Email -->
+                    <lable for="email">Email (required)</lable>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    
+                    <!-- Phone -->
+                    <lable for="phone">Phone (optional)</lable>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone">
+
+                    <!-- Phone type -->
+                    <lable for="phoneType">Phone type (optional)</lable>
+                    <select id="phoneType" name="phoneType">
+                        <option value="" selected>Select phone type</option>
+                        <option value="Mobile">Mobile</option>
+                        <option value="Work">Work</option>
+                        <option value="Home">Home</option>
+                    </select>
+
+                    <!-- Message -->
+                    <lable for="message">Message (optional)</lable>
+                    <textarea id="message" name="message" rows="8" placeholder="Message..."></textarea>
+
+                    <!-- Reply -->
+                    <fieldset>
+
+                        <legend>Would you like a reply?</legend>
+
+                        <ul>
+                            <li>
+                                <input type="radio" id="Yes" name="reply" value="Yes a reply please">
+                                <lable for="message-yes">Yes a reply would be nice.</lable> 
+                            </li>
+                            <li>
+                                <input type="radio" id="No" name="reply" value="No a reply please" checked>
+                                <lable for="message-no">No, thanks.</lable>
+                                
+                            </li>
+                        </ul>
+
+                    </fieldset>
+
+                    <!-- Submit -->
+                    <button type="submit">Send</button>
+                        
+                </div>
+                
+
+
+            </fieldset>
+            
+        </form>
+    </section>
        
     <footer>
 
