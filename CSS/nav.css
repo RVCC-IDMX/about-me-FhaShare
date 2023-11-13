@@ -27,12 +27,13 @@ main {
 /* navbar */
 
 .navbar {
-    background-color: #ffffff;
-    color: #fa53b4;
+    background-color: #CC566E;
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    padding: 0.2rem;
 }
 
 
@@ -44,21 +45,23 @@ main {
 }
 
 .logo img {
-    height: 8vw;
-    width: 8vw;
+    height: 6vw;
+    width: 6vw;
 }
 
 .logo h1 {
     font-size: 1.2em;
+    color: #ffffff;
 }
 
 
 /* navigation list */
 
 .navbar-links li {
+    font-size: 1rem;
     list-style: none;
     display: block;
-    padding: 0.5em 0;
+    padding: 0.1em 0;
 }
 
 
@@ -68,16 +71,21 @@ main {
 */
 
 .navbar-links a {
-    color: #CC566E;
-    background-attachment: #333;
+    color: #ffffff;
+    background-color: #CC566E;
     font-size: 1.5rem;
-    padding: 1rem 1.25rem;
+    padding: 1rem 1rem;
     letter-spacing: 2px;
+    text-decoration: none;
     display: inline-block;
 }
 
-
-
+.navbar-links a:hover,
+.navbar-links a:focus {
+    filter: invert(1);
+    border-radius: 20px;
+    outline: none;
+}
 
 
 /* 
@@ -85,3 +93,18 @@ media query for non-mobile nav bar
 min-width set to width of nav elements 
 such that no text wraps 
 */
+
+@media screen and (min-width: 60rem) {
+    
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar ul {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
