@@ -21,11 +21,20 @@ body {
 
 main {
     padding: 2vw;
-    
 }
+
 
 /* navbar */
 
+.navbar {
+    background-color: #ffffff;
+    color: #fa53b4;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+
+}
 
 
 /* logo */
