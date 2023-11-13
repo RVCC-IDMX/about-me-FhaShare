@@ -73,7 +73,7 @@ main {
 .navbar-links a {
     color: #ffffff;
     background-color: #CC566E;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     padding: 1rem 1rem;
     letter-spacing: 2px;
     text-decoration: none;
@@ -99,6 +99,7 @@ such that no text wraps
     .navbar {
         flex-direction: row;
         justify-content: space-between;
+        font-size: 2rem;
     }
 
     .navbar ul {
