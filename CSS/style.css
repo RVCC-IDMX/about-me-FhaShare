@@ -2,6 +2,7 @@
      font-family: "Sarabun";
      background-color: #D9F1FF;
      color: #000000;
+     padding: 5px;
  }
 
  h1 {
@@ -375,11 +376,8 @@
     width: 100%; 
     color: #ffffff;
     text-align: center;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
     margin-block-start: 0;
     margin-block-end: 0;
-    background-color: rgba(0, 0, 0, 0.2); 
     padding: 10px 0; 
     font-size: 12px;
 }
