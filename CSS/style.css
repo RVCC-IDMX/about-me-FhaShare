@@ -153,6 +153,7 @@ header {
 /* Literature */
 
 #lit {
+
     margin-bottom: 2rem;
 }
 
@@ -169,15 +170,15 @@ header {
 
 /* Dropcaps */
 
-#lit div p:first-child:first-letter {
+#lit div p:nth-child(odd):first-letter {
     color: #ffffff;
-    background-image: radial-gradient(#472557, #6647d4);
+    background-image: radial-gradient(#004fb7, #011d41);
     float: left;
     font-size: 3em;
     padding: 0.25em;
     margin-right: .25em;
     line-height: .65;
-    border: 2px groove #bd5692;
+    border: 2px groove #90D6FF;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
     font-family: "Rubik Dirt";
