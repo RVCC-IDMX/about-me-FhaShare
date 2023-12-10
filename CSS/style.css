@@ -176,6 +176,7 @@
  #lit div p {
      padding: 0.3rem 0;
      clear: both;
+     text-align: justify;
  }
 
  /* Dropcaps */
@@ -226,9 +227,6 @@
  }
 
  .np-container {
-     width: 100%;
-     height: 100%;
-     background-color: #D9F1FF;
      display: block;
      align-items: center;
      justify-content: center;
@@ -242,7 +240,7 @@
  }
 
  .np-img-box {
-     width: 100%;
+     width: 95%;
      height: 50px;
      margin: 10px;
      border-radius: 50px;
@@ -352,10 +350,11 @@
     color: #ffffff;
     text-align: center;
     bottom: 0;
+    margin: 0;
 }
 
 .np-img-box:hover {
-    width: 100%;
+    width: 95%;
     height: 250px;
     margin: 10px;
     border-radius: 50px;
@@ -370,16 +369,21 @@
 }
 
 .np-img-box:hover p {
-    position: absolute; 
-    bottom: 0; 
-    left: 0; 
-    width: 100%; 
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 40%; 
+    border-radius: 50px;
+    padding: 10px;
     color: #ffffff;
     text-align: center;
     margin-block-start: 0;
     margin-block-end: 0;
-    padding: 10px 0; 
-    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    transform: translateX(-50%);
+    color: #ffffff;
+    text-align: center;
 }
 
 /* Contact Form */
