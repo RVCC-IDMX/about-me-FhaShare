@@ -119,9 +119,8 @@ main {
     flex-direction: column;
 }
 
-/* 
-media query for non-mobile nav bar
-min-width set to width of nav elements 
-such that no text wraps 
-*/
+ /* Tablet size */
 
+ @media screen and (min-width: 600px) {
+    
+ }
