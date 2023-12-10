@@ -1,5 +1,4 @@
-
-body {
+ body {
     font-family: "Sarabun";
     background-color:#D9F1FF;
     color: #000000;
@@ -18,6 +17,7 @@ h2, h3, h4, h5, h6 {
 h2 {
     font-size: 1.2rem;
     text-align: center;
+    padding-top: 1rem;
     margin: 0.1em;
 }
 
@@ -135,11 +135,10 @@ header {
 }
 
 /* Gallery Section */
-
 #gallery {
-    border: 10px groove #8FD6FF;
-    border-radius: 2rem;
-    margin-bottom: 2rem;
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    margin: 0;
 }
 
 #gallery img {
@@ -154,7 +153,6 @@ header {
 /* Literature */
 
 #lit {
-    border: 10px ridge #bd5692;
     margin-bottom: 2rem;
 }
 
