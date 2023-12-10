@@ -8,9 +8,10 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Kaushan+Script&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Rubik+Dirt&family=Sarabun:wght@500&display=swap"
         rel="stylesheet">
-    
+
     <link href="css/style.css" rel="stylesheet">
     <link href="css/nav.css" rel="stylesheet">
 
@@ -21,30 +22,77 @@
     <!--the body element contains all content shown to a visitor-->
 
     <header>
-        <!-- the header shows logo and page title -->
-        <nav class="navbar">
-            <div class="logo">
-                <img src="/img/logo-96X96.svg" alt="Blue origami logo">
-                <h1>Web Dev I - Online!</h1>
-            </div>
-            <div class="navbar-links">
+        <div class="logo">
+            <img src="/img/FS-logo.png" alt="Fha Share logo">
+            <h1>About me: Fha Share</h1>
+        </div>
+        <!-- Checkbox for toggling the navbar -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+        <!-- Navbar starts here -->
+        <div class="navbar">
+            <nav>
                 <ul>
-                    <li><a href="#bio">Bio</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#about-me">About Me</a></li>
                     <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#lit">Blog</a></li>
+                    <li><a href="#lit">A Story</a></li>
+                    <li><a href="#blog">My Blog</a></li>
                     <li><a href="#contact">Contact Me</a></li>
                 </ul>
-            </div>
-    
-        </nav>
+            </nav>
+        </div>
+        <!-- Label that will be styled as the hamburger icon -->
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span class="container">
+                <style>
+                    .container {
+                        display: inline-block;
+                        cursor: pointer;
+                    }
+
+                    .change .bar1 {
+                        transform: translate(0, 9px) rotate(-45deg);
+                    }
+
+                    .change .bar2 {
+                        opacity: 0;
+                    }
+
+                    .change .bar3 {
+                        transform: translate(0, -9px) rotate(45deg);
+                    }
+                </style>
+                </head>
+
+                <body>
+
+                    <div class="container" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+
+                    <script>
+                        function myFunction(x) {
+                            x.classList.toggle("change");
+                        }
+                    </script>
+            </span>
+        </label>
 
     </header>
 
     <main>
         <!-- the main envelops important page content -->
-        <section id="hero">
-            <!-- hero section: shows profile image, name & location -->
-            <img src="/img/avataaars.png" alt="My Avatar">
+        <section id="profile">
+            <!-- profile section: shows profile image, name & location -->
+            <div id="profile" class="profile-picture-container">
+                <img src="/img/profile-picture-1.jpg" alt="My Profile Picture Default"
+                    class="profile-picture default-image">
+                <img src="/img/profile-picture-2.jpg" alt="My Profile Picture Hover"
+                    class="profile-picture hover-image">
+            </div>
             <div>
                 <p>Fhaungfha Suvannakajorn</p>
                 <p>Mendham, NJ</p>
@@ -52,29 +100,73 @@
             <!-- close hero section -->
         </section>
 
-        <section id="bio">
+        <section id="about-me">
             <!-- bio section!: personal info (not too personal) -->
 
-            <h2>Biography:</h2>
+            <h2>About Me:</h2>
 
             <div>
-                <p>My goal is ...</p>
-                <p>to achieve mastery in the field of cybersecurity.</p>
-                <p>And I'll be the happiest girl in my world.</p>
+                <p>My father gave me the nickname "Fha," which means "sky of blue color" in Thai. I find this name very
+                    meaningful because the sky can evoke different emotions in people, just like how people's moods can
+                    change throughout the day. Even if you have a bad day, there will always be something good about it.
+                    Remember that every day is an opportunity to experience something beautiful, like the ever-changing
+                    sky.</p>
+
+                <p>As the sky changes, so do I. I used to work as a psychologist, but after arriving in America, I
+                    discovered my interest in programming. Specifically, I had previously considered website development
+                    but had been unsuccessful in my attempts. However, after taking this course, I realized that website
+                    development involves many complex elements. Despite the challenges, I persevered and committed to
+                    constant improvement. I am pursuing a career as a software developer and exploring the potential of
+                    AI.</p>
             </div>
         </section>
 
         <section id="hobbies">
 
             <h2>Hobbies:</h2>
-            <ul>
-                <li>Eating</li>
-                <li>Cooking</li>
-                <li>Photographing</li>
-                <li>Watching Anime </li>
-                <li>Traveling</li>
-            </ul>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <input type="checkbox" id="eating-toggle" class="info-toggle">
+                    <label for="eating-toggle" class="info-label">Eating</label>
+                    <div class="info-content">
+                        <p>I enjoy trying different cuisines and experiencing various cultures through food.</p>
+                    </div>
+                </div>
 
+                <div class="accordion-item">
+                    <input type="checkbox" id="cooking-toggle" class="info-toggle">
+                    <label for="cooking-toggle" class="info-label">Cooking</label>
+                    <div class="info-content">
+                        <p>I love learning new cooking techniques from renowned chefs and experimenting with my recipes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <input type="checkbox" id="Photography-toggle" class="info-toggle">
+                    <label for="Photography-toggle" class="info-label">Photography</label>
+                    <div class="info-content">
+                        <p>I like to take photos to capture special moments and practice my photography skills to avoid
+                            missing any important memories.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <input type="checkbox" id="watching-anime-toggle" class="info-toggle">
+                    <label for="watching-anime-toggle" class="info-label">Watching Anime</label>
+                    <div class="info-content">
+                        <p>I like to watch anime as it takes me to a fantasy world, helps me relax, and makes me feel entertained while teaching me some things.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <input type="checkbox" id="traveling-toggle" class="info-toggle">
+                    <label for="traveling-toggle" class="info-label">Traveling</label>
+                    <div class="info-content">
+                        <p>I love traveling, particularly camping and exploring natural places. My bucket list is to visit all the National Parks in America.</p>
+                    </div>
+                </div>
+            </div>
 
         </section>
 
@@ -96,7 +188,7 @@
 
             <figure>
                 <img src="img/traveling-640w.jpg" alt="Yellowstone National Park.">
-                <figcaption>Traveling to Yellowstone National Park.</figcaption>
+                <figcaption>Traveling National Park.</figcaption>
             </figure>
 
         </section>
@@ -106,32 +198,91 @@
             <h2>An Excerpt From Pride and Prejudice</h2>
 
             <div>
-                <p>I am by no means of the opinion, I assure you,” said he, “that a ball of this kind, given by a young man of character, to respectable people, can have any evil tendency; and I am so far from objecting to dancing myself, that I shall hope to be honoured with the hands of all my fair cousins in the course of the evening; and I take this opportunity of soliciting yours, Miss Elizabeth, for the two first dances especially, a preference which I trust my cousin Jane will attribute to the right cause, and not to any disrespect for her.”</p>
+                <p>I am by no means of the opinion, I assure you,” said he, “that a ball of this kind, given by a young
+                    man of character, to respectable people, can have any evil tendency; and I am so far from objecting
+                    to dancing myself, that I shall hope to be honoured with the hands of all my fair cousins in the
+                    course of the evening; and I take this opportunity of soliciting yours, Miss Elizabeth, for the two
+                    first dances especially, a preference which I trust my cousin Jane will attribute to the right
+                    cause, and not to any disrespect for her.”</p>
 
-                <p>Elizabeth felt herself completely taken in. She had fully proposed being engaged by Mr. Wickham for those very dances; and to have Mr. Collins instead! her liveliness had never been worse timed. There was no help for it, however. Mr. Wickham’s happiness and her own were perforce delayed a little longer, and Mr. Collins’s proposal accepted with as good a grace as she could. She was not the better pleased with his gallantry from the idea it suggested of something more. It now first struck her, that she was selected from among her sisters as worthy of being mistress of Hunsford Parsonage, and of assisting to form a quadrille table at Rosings, in the absence of more eligible visitors. The idea soon reached to conviction, as she observed his increasing civilities toward herself, and heard his frequent attempt at a compliment on her wit and vivacity; and though more astonished than gratified herself by this effect of her charms, it was not long before her mother gave her to understand that the probability of their marriage was extremely agreeable to her. Elizabeth, however, did not choose to take the hint, being well aware that a serious dispute must be the consequence of any reply. Mr. Collins might never make the offer, and till he did, it was useless to quarrel about him.</p>
+                <p>Elizabeth felt herself completely taken in. She had fully proposed being engaged by Mr. Wickham for
+                    those very dances; and to have Mr. Collins instead! her liveliness had never been worse timed. There
+                    was no help for it, however. Mr. Wickham’s happiness and her own were perforce delayed a little
+                    longer, and Mr. Collins’s proposal accepted with as good a grace as she could. She was not the
+                    better pleased with his gallantry from the idea it suggested of something more. It now first struck
+                    her, that she was selected from among her sisters as worthy of being mistress of Hunsford Parsonage,
+                    and of assisting to form a quadrille table at Rosings, in the absence of more eligible visitors. The
+                    idea soon reached to conviction, as she observed his increasing civilities toward herself, and heard
+                    his frequent attempt at a compliment on her wit and vivacity; and though more astonished than
+                    gratified herself by this effect of her charms, it was not long before her mother gave her to
+                    understand that the probability of their marriage was extremely agreeable to her. Elizabeth,
+                    however, did not choose to take the hint, being well aware that a serious dispute must be the
+                    consequence of any reply. Mr. Collins might never make the offer, and till he did, it was useless to
+                    quarrel about him.</p>
 
-                <p>If there had not been a Netherfield ball to prepare for and talk of, the younger Miss Bennets would have been in a very pitiable state at this time, for from the day of the invitation, to the day of the ball, there was such a succession of rain as prevented their walking to Meryton once. No aunt, no officers, no news could be sought after--the very shoe-roses for Netherfield were got by proxy. Even Elizabeth might have found some trial of her patience in weather which totally suspended the improvement of her acquaintance with Mr. Wickham; and nothing less than a dance on Tuesday, could have made such a Friday, Saturday, Sunday, and Monday endurable to Kitty and Lydia.</p>
+                <p>If there had not been a Netherfield ball to prepare for and talk of, the younger Miss Bennets would
+                    have been in a very pitiable state at this time, for from the day of the invitation, to the day of
+                    the ball, there was such a succession of rain as prevented their walking to Meryton once. No aunt,
+                    no officers, no news could be sought after--the very shoe-roses for Netherfield were got by proxy.
+                    Even Elizabeth might have found some trial of her patience in weather which totally suspended the
+                    improvement of her acquaintance with Mr. Wickham; and nothing less than a dance on Tuesday, could
+                    have made such a Friday, Saturday, Sunday, and Monday endurable to Kitty and Lydia.</p>
 
-                <p>Till Elizabeth entered the drawing-room at Netherfield, and looked in vain for Mr. Wickham among the cluster of red coats there assembled, a doubt of his being present had never occurred to her. The certainty of meeting him had not been checked by any of those recollections that might not unreasonably have alarmed her. She had dressed with more than usual care, and prepared in the highest spirits for the conquest of all that remained unsubdued of his heart, trusting that it was not more than might be won in the course of the evening. But in an instant arose the dreadful suspicion of his being purposely omitted for Mr. Darcy’s pleasure in the Bingleys’ invitation to the officers; and though this was not exactly the case, the absolute fact of his absence was pronounced by his friend Denny, to whom Lydia eagerly applied, and who told them that Wickham had been obliged to go to town on business the day before, and was not yet returned; adding, with a significant smile, “I do not imagine his business would have called him away just now, if he had not wanted to avoid a certain gentleman here.”</p>
+                <p>Till Elizabeth entered the drawing-room at Netherfield, and looked in vain for Mr. Wickham among the
+                    cluster of red coats there assembled, a doubt of his being present had never occurred to her. The
+                    certainty of meeting him had not been checked by any of those recollections that might not
+                    unreasonably have alarmed her. She had dressed with more than usual care, and prepared in the
+                    highest spirits for the conquest of all that remained unsubdued of his heart, trusting that it was
+                    not more than might be won in the course of the evening. But in an instant arose the dreadful
+                    suspicion of his being purposely omitted for Mr. Darcy’s pleasure in the Bingleys’ invitation to the
+                    officers; and though this was not exactly the case, the absolute fact of his absence was pronounced
+                    by his friend Denny, to whom Lydia eagerly applied, and who told them that Wickham had been obliged
+                    to go to town on business the day before, and was not yet returned; adding, with a significant
+                    smile, “I do not imagine his business would have called him away just now, if he had not wanted to
+                    avoid a certain gentleman here.”</p>
 
-                <p>This part of his intelligence, though unheard by Lydia, was caught by Elizabeth, and, as it assured her that Darcy was not less answerable for Wickham’s absence than if her first surmise had been just, every feeling of displeasure against the former was so sharpened by immediate disappointment, that she could hardly reply with tolerable civility to the polite inquiries which he directly afterwards approached to make. Attendance, forbearance, patience with Darcy, was injury to Wickham. She was resolved against any sort of conversation with him, and turned away with a degree of ill-humour which she could not wholly surmount even in speaking to Mr. Bingley, whose blind partiality provoked her.</p>
+                <p>This part of his intelligence, though unheard by Lydia, was caught by Elizabeth, and, as it assured
+                    her that Darcy was not less answerable for Wickham’s absence than if her first surmise had been
+                    just, every feeling of displeasure against the former was so sharpened by immediate disappointment,
+                    that she could hardly reply with tolerable civility to the polite inquiries which he directly
+                    afterwards approached to make. Attendance, forbearance, patience with Darcy, was injury to Wickham.
+                    She was resolved against any sort of conversation with him, and turned away with a degree of
+                    ill-humour which she could not wholly surmount even in speaking to Mr. Bingley, whose blind
+                    partiality provoked her.</p>
 
-                <p>But Elizabeth was not formed for ill-humour; and though every prospect of her own was destroyed for the evening, it could not dwell long on her spirits; and having told all her griefs to Charlotte Lucas, whom she had not seen for a week, she was soon able to make a voluntary transition to the oddities of her cousin, and to point him out to her particular notice. The first two dances, however, brought a return of distress; they were dances of mortification. Mr. Collins, awkward and solemn, apologising instead of attending, and often moving wrong without being aware of it, gave her all the shame and misery which a disagreeable partner for a couple of dances can give. The moment of her release from him was ecstasy.</p>
+                <p>But Elizabeth was not formed for ill-humour; and though every prospect of her own was destroyed for
+                    the evening, it could not dwell long on her spirits; and having told all her griefs to Charlotte
+                    Lucas, whom she had not seen for a week, she was soon able to make a voluntary transition to the
+                    oddities of her cousin, and to point him out to her particular notice. The first two dances,
+                    however, brought a return of distress; they were dances of mortification. Mr. Collins, awkward and
+                    solemn, apologising instead of attending, and often moving wrong without being aware of it, gave her
+                    all the shame and misery which a disagreeable partner for a couple of dances can give. The moment of
+                    her release from him was ecstasy.</p>
 
-                <p>She danced next with an officer, and had the refreshment of talking of Wickham, and of hearing that he was universally liked. When those dances were over, she returned to Charlotte Lucas, and was in conversation with her, when she found herself suddenly addressed by Mr. Darcy who took her so much by surprise in his application for her hand, that, without knowing what she did, she accepted him. He walked away again immediately, and she was left to fret over her own want of presence of mind; Charlotte tried to console her:</p>
+                <p>She danced next with an officer, and had the refreshment of talking of Wickham, and of hearing that
+                    he was universally liked. When those dances were over, she returned to Charlotte Lucas, and was in
+                    conversation with her, when she found herself suddenly addressed by Mr. Darcy who took her so much
+                    by surprise in his application for her hand, that, without knowing what she did, she accepted him.
+                    He walked away again immediately, and she was left to fret over her own want of presence of mind;
+                    Charlotte tried to console her:</p>
 
                 <p>"I dare say you will find him very agreeable.”</p>
 
-                <p>"Heaven forbid! That would be the greatest misfortune of all! To find a man agreeable whom one is determined to hate! Do not wish me such an evil.”</p>
+                <p>"Heaven forbid! That would be the greatest misfortune of all! To find a man agreeable whom one is
+                    determined to hate! Do not wish me such an evil.”</p>
             </div>
         </article>
     </main>
 
     <section id="video">
         <h2>A Short Video:</h2>
-    
-        <iframe id="myVideo" width="560" height="315" src="https://www.youtube.com/embed/DZ8Co_HalYs?si=oJs9YZcW-SIQ6Yl3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        
+
+        <iframe id="myVideo" width="560" height="315"
+            src="https://www.youtube.com/embed/DZ8Co_HalYs?si=oJs9YZcW-SIQ6Yl3" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
         <div class="video-caption">
             This is my new study station.
         </div>
@@ -145,17 +296,17 @@
 
             <fieldset>
                 <legend>Contact Form</legend>
-                
+
                 <div id="formElements">
 
                     <!-- Name -->
                     <lable for="name">Name (required)</lable>
                     <input type="text" id="name" name="name" placeholder="Name" required>
-                    
+
                     <!-- Email -->
                     <lable for="email">Email (required)</lable>
                     <input type="email" id="email" name="email" placeholder="Email" required>
-                    
+
                     <!-- Phone -->
                     <lable for="phone">Phone (optional)</lable>
                     <input type="tel" id="phone" name="phone" placeholder="Phone">
@@ -181,12 +332,12 @@
                         <ul>
                             <li>
                                 <input type="radio" id="Yes" name="reply" value="Yes a reply please">
-                                <lable for="message-yes">Yes a reply would be nice.</lable> 
+                                <lable for="message-yes">Yes a reply would be nice.</lable>
                             </li>
                             <li>
                                 <input type="radio" id="No" name="reply" value="No a reply please" checked>
                                 <lable for="message-no">No, thanks.</lable>
-                                
+
                             </li>
                         </ul>
 
@@ -194,20 +345,19 @@
 
                     <!-- Submit -->
                     <button type="submit">Send</button>
-                        
+
                 </div>
-                
 
 
             </fieldset>
-            
+
         </form>
     </section>
-       
+
     <footer>
 
         ©2023 - Fhaungfha Suvannakajorn
-        
+
     </footer>
 
 </body>
