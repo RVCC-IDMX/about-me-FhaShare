@@ -338,7 +338,12 @@
 .np-img-box h3{
     color: #ffffff;
     position: absolute;
+    top: 0;
+    left: 50%; 
+    transform: translateX(-50%);
     text-align: center;
+    width: 100%;
+    margin-top: 10px;
     opacity: 0;
 }
 
@@ -359,10 +364,24 @@
     cursor: pointer;
 }
 
-.np-img-box h3:hover {
+.np-img-box:hover h3{
     opacity: 1;
 }
 
+.np-img-box:hover p {
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    color: #ffffff;
+    text-align: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    background-color: rgba(0, 0, 0, 0.2); 
+    padding: 10px 0; 
+}
 
 /* Contact Form */
 
