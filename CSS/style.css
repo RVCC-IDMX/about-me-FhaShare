@@ -15,6 +15,7 @@
      text-align: center;
      padding-top: 1rem;
      margin: 0.1em;
+     color: #002C66;
  }
 
  h3,
@@ -23,7 +24,7 @@
  h6 {
      font-family: "Bungee Inline";
      font-size: 1rem;
-     color: #002C66;
+     color: #000000;
  }
 
  header {
@@ -230,7 +231,7 @@
      display: block;
      align-items: center;
      justify-content: center;
-     padding: 10px;
+     border: solid black;
  }
 
  .np-gallery {
@@ -332,6 +333,11 @@
     background: url(/img/\ mammoth-hot-springs-650w.jpg);
     background-size: cover;
     background-position: center;
+}
+
+.np-img-box h4{
+    position: absolute;
+    text-align: center;
 }
 
 .np-img-box h3{
