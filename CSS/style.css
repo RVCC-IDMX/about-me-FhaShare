@@ -349,7 +349,7 @@
 }
 
 .np-img-box:hover {
-    width: 350px;
+    width: 100%;
     height: 250px;
     margin: 10px;
     border-radius: 50px;
@@ -360,7 +360,7 @@
 }
 
 .np-img-box h3:hover {
-    opacity: 100;
+    opacity: 1;
 }
 
 
