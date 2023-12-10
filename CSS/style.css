@@ -45,7 +45,6 @@
      width: 150px;
      height: 150px;
      border-radius: 50%;
-     /* Circular shape */
      padding: 10px;
      align-items: center;
  }
@@ -219,7 +218,6 @@
  /* My Blog */
  #blog {
     background-color: #FFFFFF;
-    border-radius: 2rem;
     text-align: center;
     font-size: 15pt;
     padding: 10px;
