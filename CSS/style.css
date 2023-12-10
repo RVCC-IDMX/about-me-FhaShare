@@ -77,12 +77,16 @@
      opacity: 0;
  }
 
-
+ #animation {
+    color: #0064d7;
+    font-size: 12pt;
+ }
  /* About-me Section */
 
  #about-me {
-     text-align: center;
+     text-align: justify;
      font-size: 15pt;
+     text-indent: 40px;
  }
 
  /* Hobbies Section */
@@ -213,7 +217,14 @@
  }
 
  /* My Blog */
-
+ #blog {
+    background-color: #FFFFFF;
+    border-radius: 2rem;
+    text-align: center;
+    font-size: 15pt;
+    padding: 10px;
+    align-items: center;
+}
  
 
  /* Contact Form */
