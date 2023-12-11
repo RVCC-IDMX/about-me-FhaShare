@@ -415,6 +415,12 @@ h5 {
     margin-top: 5px;
  }
 
+ .structure-html-image {
+    width: 100%;
+ }
+
+
+
  /* Contact Form */
 
  #formElements {
@@ -710,6 +716,12 @@ h5 {
         font-family: "Sarabun";
         font-weight: bold;
      }
+
+     .structure-html-image {
+        width: 650px;
+     }
+
+     
 
 
  }
