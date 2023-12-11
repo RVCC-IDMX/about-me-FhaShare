@@ -93,7 +93,7 @@
  /* About-me Section */
 
  #about-me {
-     text-align: justify;
+     text-align: left;
      font-size: 15pt;
      text-indent: 40px;
  }
@@ -465,6 +465,10 @@
 
  @media screen and (min-width: 600px) {
 
+     h2 {
+         text-align: left;
+     }
+
      /* Profile Section */
 
      #profile {
@@ -479,11 +483,11 @@
          height: auto;
          columns: 20rem;
          display: grid;
-         grid-template-columns: 1.5fr 2fr;
+         grid-template-columns: 1fr 2fr;
      }
 
      .profile-picture-container {
-         margin-left: 20px;
+         margin-left: 30px;
          transform: translateY(-230%);
      }
 
@@ -554,7 +558,6 @@
          justify-content: center;
      }
 
-
      figcaption {
          display: flex;
          justify-content: center;
@@ -563,13 +566,7 @@
          padding-top: 10px;
      }
 
-     #lit div {
-         max-width: 100%;
-         columns: 20rem;
-         display: grid;
-         grid-template-columns: 1fr 1fr 1fr;
-     }
-
+     /* My Video */
      #myVideo {
          max-width: 100%;
      }
@@ -578,7 +575,7 @@
 
  /* Large Sreen size */
 
- @media screen and (min-width: 100em) {
+ @media screen and (min-width: 1000px) {
      #gallery {
          display: grid;
          grid-template-columns: 1fr 1fr 1fr;
@@ -592,34 +589,105 @@
          grid-column: 1/-1;
      }
 
+     /* Gallery Section */
      figure {
          display: block;
      }
 
+     figcaption {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-size: 1rem;
+         padding-top: 10px;
+     }
+
+     /* Literature */
+     #lit div {
+         max-width: 90%;
+         columns: 2 20rem;
+         column-gap: 20px;
+         padding: 10px;
+     }
+
+     /* My Blog */
+
      .np-container {
          width: 100%;
-         height: 100vh;
-         background-color: #D9F1FF;
+         height: fit-content;
          display: flex;
          align-items: center;
-         justify-content: center;
+         justify-content: flex-start;
+         overflow-x: auto;
+         margin: 0 auto;
      }
 
      .np-gallery {
          display: flex;
          align-items: center;
-         justify-content: center;
+         justify-content: flex-start;
+         flex-wrap: inherit;
+         padding: 5px 0;
+         gap: 8px;
+
      }
 
      .np-img-box {
-         width: 100px;
-         height: 500px;
+         width: 60px;
+         height: 520px;
          margin: 10px;
-         border-radius: 50px;
-         background: url(/img/mountainous-desert-650w.jpg);
          background-size: cover;
          background-position: center;
+         transition: width 0.3s ease, margin 0.3s ease;
+         position: relative;
      }
+
+     .np-img-box h3 {
+         color: #ffffff;
+         position: absolute;
+         top: 0;
+         left: 50%;
+         transform: translateX(-50%);
+         text-align: center;
+         width: 100%;
+         margin-top: 10px;
+         opacity: 0;
+     }
+
+     .np-img-box p {
+         color: #ffffff;
+         text-align: center;
+         transform: rotate(-90deg);
+         align-items: center;
+     }
+
+     .np-img-box:hover {
+         width: 650px;
+         height: 520px;
+         border-radius: 50px;
+         background-size: cover;
+         background-position: center;
+         cursor: pointer;
+     }
+
+     .np-img-box:hover p {
+         position: absolute;
+         bottom: 0;
+         left: 50%;
+         width: 40%;
+         border-radius: 50px;
+         padding: 10px;
+         color: #ffffff;
+         text-align: center;
+         margin-block-start: 0;
+         margin-block-end: 0;
+         background-color: rgba(0, 0, 0, 0.5);
+         font-size: 14px;
+         transform: translateX(-50%);
+         color: #ffffff;
+         text-align: center;
+     }
+
 
 
 
