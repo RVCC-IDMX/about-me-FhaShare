@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/06e28e20-2cad-485e-b8d3-70d49dc8198a/deploy-status)](https://app.netlify.com/sites/about-me-fhashare/deploys)
 
-##**Welcome to My About Me Project:**
+## Welcome to My About Me Project: 
 
 My name is Fhaungfha Suvannakajorn, but my AKA is Fha Share. Feel free to call me Fha.
 
