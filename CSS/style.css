@@ -657,8 +657,14 @@
      .np-img-box p {
          color: #ffffff;
          text-align: center;
-         transform: rotate(-90deg);
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%) rotate(-90deg);
+         white-space: nowrap;
          align-items: center;
+         display: flex;
+         justify-content: center;
      }
 
      .np-img-box:hover {
@@ -671,21 +677,13 @@
      }
 
      .np-img-box:hover p {
-         position: absolute;
          bottom: 0;
-         left: 50%;
-         width: 40%;
-         border-radius: 50px;
-         padding: 10px;
-         color: #ffffff;
          text-align: center;
-         margin-block-start: 0;
-         margin-block-end: 0;
-         background-color: rgba(0, 0, 0, 0.5);
-         font-size: 14px;
+         margin-top: 200px;
          transform: translateX(-50%);
-         color: #ffffff;
-         text-align: center;
+         width: fit-content;
+         height: fit-content;
+         padding: 10px;
      }
 
 
