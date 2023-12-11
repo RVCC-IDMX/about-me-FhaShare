@@ -34,7 +34,7 @@
  /* Profile Section */
 
  #profile {
-    margin-top: 100px;
+     margin-top: 100px;
      background-color: #FFFFFF;
      border-radius: 2rem;
      text-align: center;
@@ -44,10 +44,10 @@
  }
 
  #profile p {
-    margin-block-start: 0;
-    margin-block-end: 10px;
-}
- 
+     margin-block-start: 0;
+     margin-block-end: 10px;
+ }
+
 
  .profile-picture-container {
      position: relative;
@@ -260,147 +260,147 @@
  }
 
  .np-img-box:nth-child(2) {
-    background: url(/img/sand-dunes-650w.jpg);
-    background-size: cover;
-    background-position: center;
-}
+     background: url(/img/sand-dunes-650w.jpg);
+     background-size: cover;
+     background-position: center;
+ }
 
-.np-img-box:nth-child(3) {
-    background: url(/img/cholla-cactus-650w.jpg);
-    background-size: cover;
-    background-position: center;
-}
+ .np-img-box:nth-child(3) {
+     background: url(/img/cholla-cactus-650w.jpg);
+     background-size: cover;
+     background-position: center;
+ }
 
-.np-img-box:nth-child(4) {
-    background: url(/img/joshua-trees-650w.jpg);
-    background-size: cover;
-    background-position: center;
-}
+ .np-img-box:nth-child(4) {
+     background: url(/img/joshua-trees-650w.jpg);
+     background-size: cover;
+     background-position: center;
+ }
 
-.np-img-box:nth-child(5) {
-    background: url(/img/tunnel-rock-650w.jpg);
-    background-size: cover;
-    background-position: center;
-}
+ .np-img-box:nth-child(5) {
+     background: url(/img/tunnel-rock-650w.jpg);
+     background-size: cover;
+     background-position: center;
+ }
 
-.np-img-box:nth-child(6) {
-    background: url(/img/tunnel-log-650w.jpg);
-    background-size: cover;
-    background-position: center;
-}
+ .np-img-box:nth-child(6) {
+     background: url(/img/tunnel-log-650w.jpg);
+     background-size: cover;
+     background-position: center;
+ }
 
-.np-img-box:nth-child(7) {
-    background: url(/img/tunnel-view-650w.jpg);
-    background-size: cover;
-    background-position: center;
-}
+ .np-img-box:nth-child(7) {
+     background: url(/img/tunnel-view-650w.jpg);
+     background-size: cover;
+     background-position: center;
+ }
 
-.np-img-box:nth-child(8) {
-    background: url(/img/half-dome-650w.jpg);
-    background-size: cover;
-    background-position: center;
-}
+ .np-img-box:nth-child(8) {
+     background: url(/img/half-dome-650w.jpg);
+     background-size: cover;
+     background-position: center;
+ }
 
-.np-img-box:nth-child(9) {
-    background: url(/img/merced-river-650w.jpg);
-    background-size: cover;
-    background-position: center;
-}
+ .np-img-box:nth-child(9) {
+     background: url(/img/merced-river-650w.jpg);
+     background-size: cover;
+     background-position: center;
+ }
 
-.np-img-box:nth-child(10) {
-    background: url(/img/canyon-650w.jpg);
-    background-size: cover;
-    background-position: center;
-}
+ .np-img-box:nth-child(10) {
+     background: url(/img/canyon-650w.jpg);
+     background-size: cover;
+     background-position: center;
+ }
 
-.np-img-box:nth-child(11) {
-    background: url(/img/canyon-trails-650w.jpg);
-    background-size: cover;
-    background-position: center;
-}
+ .np-img-box:nth-child(11) {
+     background: url(/img/canyon-trails-650w.jpg);
+     background-size: cover;
+     background-position: center;
+ }
 
-.np-img-box:nth-child(12) {
-    background: url(/img/canyon-sunset-650w.jpg);
-    background-size: cover;
-    background-position: center;
-}
+ .np-img-box:nth-child(12) {
+     background: url(/img/canyon-sunset-650w.jpg);
+     background-size: cover;
+     background-position: center;
+ }
 
-.np-img-box:nth-child(13) {
-    background: url(/img/bison-650w.jpg);
-    background-size: cover;
-    background-position: center;
-}
+ .np-img-box:nth-child(13) {
+     background: url(/img/bison-650w.jpg);
+     background-size: cover;
+     background-position: center;
+ }
 
-.np-img-box:nth-child(14) {
-    background: url(/img/geysers-650w.jpg);
-    background-size: cover;
-    background-position: center;
-}
- 
-.np-img-box:nth-child(15) {
-    background: url(/img/\ mammoth-hot-springs-650w.jpg);
-    background-size: cover;
-    background-position: center;
-}
+ .np-img-box:nth-child(14) {
+     background: url(/img/geysers-650w.jpg);
+     background-size: cover;
+     background-position: center;
+ }
 
-.np-img-box h4{
-    position: absolute;
-    text-align: center;
-}
+ .np-img-box:nth-child(15) {
+     background: url(/img/\ mammoth-hot-springs-650w.jpg);
+     background-size: cover;
+     background-position: center;
+ }
 
-.np-img-box h3{
-    color: #ffffff;
-    position: absolute;
-    top: 0;
-    left: 50%; 
-    transform: translateX(-50%);
-    text-align: center;
-    width: 100%;
-    margin-top: 10px;
-    opacity: 0;
-}
+ .np-img-box h4 {
+     position: absolute;
+     text-align: center;
+ }
 
-.np-img-box p{
-    color: #ffffff;
-    text-align: center;
-    bottom: 0;
-    margin: 0;
-}
+ .np-img-box h3 {
+     color: #ffffff;
+     position: absolute;
+     top: 0;
+     left: 50%;
+     transform: translateX(-50%);
+     text-align: center;
+     width: 100%;
+     margin-top: 10px;
+     opacity: 0;
+ }
 
-.np-img-box:hover {
-    width: 95%;
-    height: 250px;
-    margin: 10px;
-    border-radius: 50px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    cursor: pointer;
-}
+ .np-img-box p {
+     color: #ffffff;
+     text-align: center;
+     bottom: 0;
+     margin: 0;
+ }
 
-.np-img-box:hover h3{
-    opacity: 1;
-}
+ .np-img-box:hover {
+     width: 95%;
+     height: 250px;
+     margin: 10px;
+     border-radius: 50px;
+     background-size: cover;
+     background-position: center;
+     position: relative;
+     cursor: pointer;
+ }
 
-.np-img-box:hover p {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 40%; 
-    border-radius: 50px;
-    padding: 10px;
-    color: #ffffff;
-    text-align: center;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    font-size: 14px;
-    transform: translateX(-50%);
-    color: #ffffff;
-    text-align: center;
-}
+ .np-img-box:hover h3 {
+     opacity: 1;
+ }
 
-/* Contact Form */
+ .np-img-box:hover p {
+     position: absolute;
+     bottom: 0;
+     left: 50%;
+     width: 40%;
+     border-radius: 50px;
+     padding: 10px;
+     color: #ffffff;
+     text-align: center;
+     margin-block-start: 0;
+     margin-block-end: 0;
+     background-color: rgba(0, 0, 0, 0.5);
+     font-size: 14px;
+     transform: translateX(-50%);
+     color: #ffffff;
+     text-align: center;
+ }
+
+ /* Contact Form */
 
  #formElements {
      display: grid;
@@ -464,6 +464,68 @@
  /* Tablet size */
 
  @media screen and (min-width: 600px) {
+
+     /* Profile Section */
+
+     #profile {
+         margin-top: 150px;
+         background-color: #FFFFFF;
+         border-radius: 2rem;
+         text-align: center;
+         font-size: 15pt;
+         align-items: center;
+         padding-bottom: 10px;
+         max-width: 100%;
+         height: auto;
+         columns: 20rem;
+         display: grid;
+         grid-template-columns: 1.5fr 2fr;
+     }
+
+     .profile-picture-container {
+        margin-left: 20px;
+        transform: translateY(-230%);
+     }
+
+     #profile p {
+         margin-block-start: 0;
+         margin-block-end: 10px;
+         text-align: left;
+     }
+
+     .profile-picture {
+         position: absolute;
+         width: 180px;
+         height: 180px;
+         border-radius: 50%;
+         border: 5px solid #90D6FF;
+         transition: opacity 0.5s ease-in-out;
+         object-fit: cover;
+     }
+
+     .default-image {
+         opacity: 1;
+     }
+
+     .hover-image {
+         opacity: 0;
+     }
+
+     .profile-picture-container:hover .hover-image {
+         opacity: 1;
+     }
+
+     .profile-picture-container:hover .default-image {
+         opacity: 0;
+     }
+
+     #animation {
+         color: #0064d7;
+         font-size: 12pt;
+     }
+
+
+
      figure {
          display: grid;
          grid-template-columns: 2fr 1fr;
@@ -526,15 +588,15 @@
      }
 
      .np-img-box {
-        width: 100px;
-        height: 500px;
-        margin: 10px;
-        border-radius: 50px;
-        background: url(/img/mountainous-desert-650w.jpg);
-        background-size: cover;
-        background-position: center;
-    }
-   
+         width: 100px;
+         height: 500px;
+         margin: 10px;
+         border-radius: 50px;
+         background: url(/img/mountainous-desert-650w.jpg);
+         background-size: cover;
+         background-position: center;
+     }
+
 
 
  }
