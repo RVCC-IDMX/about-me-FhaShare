@@ -613,6 +613,16 @@ h5 {
          grid-column: 1/-1;
      }
 
+  .profile-picture-container {
+     position: relative;
+     width: 250px;
+     height: 250px;
+     border-radius: 50%;
+     padding: 15px;
+     align-items: center;
+     margin-bottom: 30px;
+ }
+
      /* Gallery Section */
      figure {
          display: block;
